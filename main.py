@@ -7,7 +7,7 @@ import os
 from models.phonebook_entry import PhoneBookEnrty
 
 # Create a mongo client and connect it to the DB
-client = MongoClient(os.environ["MONGO_ADDRESS"] + ":" + os.environ["MONGO_PORT"])
+client = MongoClient("172.17.0.2:27017")
 
 db = client.admin
 # Issue the serverStatus command and print the results
